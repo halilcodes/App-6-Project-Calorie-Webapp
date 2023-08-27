@@ -27,6 +27,9 @@ class CalculationPage(MethodView):
                                calculation=calculation_form, result=result,
                                calories=required_calories)
 
+    def calculate(self, calculationform):
+        pass
+
 
 class CalculationForm(Form):
     weight = StringField('Weight: ', default='70')
